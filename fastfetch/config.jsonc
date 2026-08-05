@@ -1,0 +1,104 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "type": "kitty",
+    "source": "~/.config/fastfetch/jinx3.png",
+    "width": 25,  //Ajusta el ancho de la imagen
+    //"height": 10,   //Dejandolo en 0, mantiene la proporcion automaticamente con el ancho
+    "padding": {
+      "top": 0,   //Espacio superior(Empuja la imagen hacia abajo)
+      "left": 1,  //Espacio a la izquierda(Empuja la imagen a la derecha)
+      "right": 4   //Espacio entre la imagen y el texto
+    }
+  },
+  
+  "display": {
+    // Esto crea la linea vertical separadora y alinea las etiquetas
+    "key": {
+      "type": "string",
+      "width": 12      
+    }
+  },
+  "modules": [
+  "break",
+  "break",
+  "break",
+  
+    // 1. Tapa superior de la caja
+    {
+      "type": "custom",
+      "format": "╭─────────────────────────────────────────────────────────────╮",
+      "outputColor": "blue"
+    },
+
+    {
+      "type": "title",
+      "key": "user      ▌",
+      "keyColor": "blue",
+      "format": "{user-name}"
+    },
+    {
+      "type": "os",
+      "key": "os        ▌",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "kernel",
+      "key": "kernel    ▌",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "packages",
+      "key": "package   ▌",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "shell",
+      "key": "shell     ▌",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "wm",
+      "key": "wm        ▌",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "terminal",
+      "key": "terminal  ▌",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "cpu",
+      "key": "cpu       ▌",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "memory",
+      "key": "memory    ▌",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "disk",
+      "key": "disk      ▌",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "terminalfont",
+      "key": "font      ▌",
+      "keyColor": "blue"
+    },
+
+
+    {
+      "type": "custom",
+      "format": "╰─────────────────────────────────────────────────────────────╯",
+      "outputColor": "blue"
+    },
+
+    "break",
+    {
+      "type": "colors",
+      "symbol": "square"
+    }
+  ]
+}
